@@ -12,7 +12,7 @@ function carritoDeCompras() {
         if (producto === "mate_madera") {
             costoTotal += 500 * cantidad;
             console.log(`Agregaste ${cantidad} Mate(s) de madera al carrito. Subtotal: $${500 * cantidad}`);
-        } else if (producto === "mate_ceramica") {
+        } else if (producto === "mate_calabaza") {
             costoTotal += 800 * cantidad;
             console.log(`Agregaste ${cantidad} Mate(s) de cerámica al carrito. Subtotal: $${800 * cantidad}`);
         } else if (producto === "bombilla_acero") {
@@ -25,7 +25,6 @@ function carritoDeCompras() {
             console.log("Producto no válido, intente nuevamente.");
         }
 
-        
         let respuesta = prompt("¿Desea agregar otro producto? (si/no):");
 
         if (respuesta.toLowerCase() !== "si") {
